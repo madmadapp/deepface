@@ -58,6 +58,7 @@ def initialize_folder():
 		print("Directory ", home, "/.deepface/weights created")
 
 def get_deepface_home():
+	print('deepface home: {}'.format(str(os.path.dirname(path.abspath(__file__)))))
 	return str(os.path.dirname(path.abspath(__file__)))
 
 def loadBase64Img(uri):
